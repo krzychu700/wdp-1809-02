@@ -2,6 +2,16 @@
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
+  
+
+  &:hover {
+     
+    .btn-main-small {
+      z-index: 1;
+      background-color: $primary;
+    }
+    
+  }
 
   .photo {
     position: relative;
@@ -78,5 +88,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
   }
 }
