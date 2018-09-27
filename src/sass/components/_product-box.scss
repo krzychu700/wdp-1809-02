@@ -2,15 +2,11 @@
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
-  
-
   &:hover {
-     
     .btn-main-small {
       z-index: 1;
       background-color: $primary;
     }
-    
   }
 
   .photo {
@@ -35,7 +31,7 @@
       color: #ffffff;
       padding: 30px 15px 5px 15px;
     }
-
+    
     .buttons {
       display: flex;
       justify-content: space-between;
@@ -45,21 +41,18 @@
   .content {
     text-align: center;
     padding: 20px;
-
     h5 {
       color: $primary;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px;
     }
-
     .stars {
       a {
         text-decoration: none;
         color: rgb(42,42,42);
         @extend .far;
         @extend .fa-star;
-
         &.full {
           @extend .fas;
         }
@@ -71,7 +64,6 @@
     margin: 0 10px;
     border-bottom: 1px solid #2a2a2a;
     position: relative;
-
     &::before {
       content: '';
       position: absolute;
@@ -88,6 +80,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
   }
 }
