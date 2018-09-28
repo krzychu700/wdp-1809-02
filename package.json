@@ -6,9 +6,6 @@
   "scripts": {
     "prewatch": "npm run build",
     "watch": "npm-run-all -p watch:*",
-    "watch:images": "onchange 'src/images/**/*' -- npm run copy:images",
-    "watch:scripts": "onchange 'src/scripts/**/*' -- npm run copy:scripts",
-    "watch:webfonts": "onchange 'src/webfonts/**/*' -- npm run copy:webfonts",
     "watch:sass": "node-sass src/sass/style.scss --source-map true -w -o dist/css",
     "watch:browsersync": "browser-sync start --server --files ./ --cwd dist",
     "clean": "rimraf dist",
