@@ -6,10 +6,6 @@
   "scripts": {
     "prewatch": "npm run build",
     "watch": "npm-run-all -p watch:*",
-    "watchOLD": "npm run build && npm-run-all -p watch:*",
-    "watch:images": "onchange 'src/images/**/*' -- npm run copy:images",
-    "watch:scripts": "onchange 'src/scripts/**/*' -- npm run copy:scripts",
-    "watch:webfonts": "onchange 'src/webfonts/**/*' -- npm run copy:webfonts",
     "watch:sass": "node-sass src/sass/style.scss --source-map true -w -o dist/css",
     "watch:browsersync": "browser-sync start --server --files ./ --cwd dist",
     "clean": "rimraf dist",
@@ -20,11 +16,6 @@
     "copy:images": "cpy \"**/*\" \"../../dist/images\" --cwd=src/images --parents",
     "prebuild": "npm run clean",
     "build": "npm-run-all -p copy build:*",
-    "copyOLD:html": "rimraf dist/**/*.html && cpy '**/*.html' '../dist' --cwd=src --parents",
-    "copyOLD:scripts": "rimraf dist/scripts && cpy '**/*' '../../dist/scripts' --cwd=src/scripts --parents",
-    "copyOLD:webfonts": "rimraf dist/webfonts && cpy '**/*' '../../dist/webfonts' --cwd=src/webfonts --parents",
-    "copyOLD:images": "rimraf dist/images && cpy '**/*' '../../dist/images' --cwd=src/images --parents",
-    "buildOLD": "npm-run-all clean copy:* build:*",
     "build:sass": "node-sass src/sass/style.scss --output-style compressed -o dist/css"
   },
   "author": "",
