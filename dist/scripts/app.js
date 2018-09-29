@@ -2,7 +2,7 @@
 
 var btnFavorite = document.querySelectorAll('a.btn-outline');
 
-for (var i = 0; i < btnFavorite.length; i++) {
+ for (var i = 0; i < btnFavorite.length; i++) {
 	btnFavorite[i].addEventListener('click', function (event) {
         var classActive = this.classList;
         if (classActive.contains('active')){
@@ -11,5 +11,4 @@ for (var i = 0; i < btnFavorite.length; i++) {
             this.className += ' active';
         }
     }, false);
-    
-}
+} 
