@@ -198,14 +198,12 @@ header {
           z-index: 1;
           white-space: nowrap;
         }
-
         &:hover {
           background-color: $primary;
           i:first-child,  
           i:last-child {
             color: #fff;
           }
-         
         }
       }
 

@@ -10265,7 +10265,8 @@ header .menu-bar {
         white-space: nowrap; }
       header .menu-bar .search-form .category:hover {
         background-color: #d58e32; }
-        header .menu-bar .search-form .category:hover i:first-child, header .menu-bar .search-form .category:hover i:last-child {
+        header .menu-bar .search-form .category:hover i:first-child,
+        header .menu-bar .search-form .category:hover i:last-child {
           color: #fff; }
     header .menu-bar .search-form .search-field {
       display: flex;
