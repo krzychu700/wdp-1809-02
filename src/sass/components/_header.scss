@@ -214,20 +214,17 @@ header {
               padding: 10px 0;
               border-left: 5px solid #ffffff;
               &:hover {
-                ul.list-links_sub {
+                ul.menu-links_sub {
                   display: block;
                 }
               }
-              ul.sub-1 {
-                top: 0;
-              }
-              ul.sub-2 {
+              ul.links-height_2 {
                 top: 44px;
               }
-              ul.sub-3 {
+              ul.links-height_3 {
                 top: 88px;
               }
-              ul.list-links_sub {
+              ul.menu-links_sub {
                 display: none;
                 position: absolute;
                 width: 219px;
@@ -297,7 +294,7 @@ header {
           i:last-child {
             color: #fff;
           }
-          span {
+          .menu-list_placeholder {
             color: #fff;
           }
         }
