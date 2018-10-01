@@ -10233,83 +10233,6 @@ header .menu-bar {
             border-color: #d58e32; }
           header .menu-bar .menu ul li a.active {
             border-color: #2a2a2a; }
-  header .menu-bar .menu-list {
-    position: relative;
-    display: inline-flex;
-    width: 35px;
-    height: 50px;
-    padding: 20px 0;
-    margin-right: 2px; }
-    header .menu-bar .menu-list:hover ul.menu-list_links {
-      display: block; }
-    header .menu-bar .menu-list i {
-      color: #d58e32;
-      position: absolute;
-      top: 5px;
-      font-size: 35px; }
-      header .menu-bar .menu-list i:hover {
-        opacity: 0.7; }
-    header .menu-bar .menu-list ul.menu-list_links {
-      width: 220px;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: none;
-      z-index: 10;
-      position: absolute;
-      top: 50px;
-      left: -10px;
-      background-color: #ffffff;
-      box-shadow: 2px 3.464px 6px rgba(1, 2, 2, 0.2); }
-      header .menu-bar .menu-list ul.menu-list_links li {
-        display: block;
-        width: 100%;
-        margin: 0;
-        padding: 10px 0;
-        border-left: 5px solid #ffffff; }
-        header .menu-bar .menu-list ul.menu-list_links li:hover ul.list-links_sub {
-          display: block; }
-        header .menu-bar .menu-list ul.menu-list_links li ul.sub-1 {
-          top: 0; }
-        header .menu-bar .menu-list ul.menu-list_links li ul.sub-2 {
-          top: 44px; }
-        header .menu-bar .menu-list ul.menu-list_links li ul.sub-3 {
-          top: 88px; }
-        header .menu-bar .menu-list ul.menu-list_links li ul.list-links_sub {
-          display: none;
-          position: absolute;
-          width: 220px;
-          left: 221px;
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          background-color: #ffffff;
-          box-shadow: 0 1px 3.464px 1px rgba(1, 2, 2, 0.2); }
-          header .menu-bar .menu-list ul.menu-list_links li ul.list-links_sub li {
-            display: block;
-            width: 100%;
-            margin: 0;
-            padding: 10px 0;
-            border-left: 5px solid #ffffff; }
-            header .menu-bar .menu-list ul.menu-list_links li ul.list-links_sub li:hover {
-              border-left: 5px solid black; }
-              header .menu-bar .menu-list ul.menu-list_links li ul.list-links_sub li:hover a {
-                color: #ffffff; }
-            header .menu-bar .menu-list ul.menu-list_links li ul.list-links_sub li a {
-              color: #000000; }
-        header .menu-bar .menu-list ul.menu-list_links li:hover {
-          background-color: #d58e32;
-          box-shadow: 0 2px 3.464px 1px rgba(1, 2, 2, 0.2);
-          border-left: 5px solid black; }
-          header .menu-bar .menu-list ul.menu-list_links li:hover a {
-            color: #ffffff; }
-        header .menu-bar .menu-list ul.menu-list_links li a {
-          margin: 0;
-          padding: 0;
-          text-decoration: none;
-          display: block;
-          color: #000000;
-          text-align: center; }
   header .menu-bar .search-form {
     border: 1px solid #292929;
     display: inline-flex;
@@ -10318,22 +10241,109 @@ header .menu-bar {
     header .menu-bar .search-form .category {
       border-right: 1px solid #292929;
       display: flex;
+      width: 220px;
       align-items: center;
-      position: relative;
-      padding-right: 20px; }
-      header .menu-bar .search-form .category select {
-        -webkit-appearance: none;
-        border: 0;
-        background-color: transparent;
-        outline: none;
-        padding: 5px 30px;
-        font-size: 14px;
+      position: relative; }
+      header .menu-bar .search-form .category span {
+        color: #2a2a2a;
         position: relative;
-        z-index: 1; }
+        left: 45px;
+        top: -5px;
+        font-size: 14px; }
+      header .menu-bar .search-form .category .menu-list {
+        position: relative;
+        display: inline-flex;
+        width: 220px;
+        height: 50px;
+        padding: 20px 0;
+        margin-right: 2px; }
+        header .menu-bar .search-form .category .menu-list:hover ul.menu-list_links {
+          display: block; }
+        header .menu-bar .search-form .category .menu-list i {
+          color: #d58e32;
+          position: absolute;
+          top: 17px; }
+        header .menu-bar .search-form .category .menu-list ul.menu-list_links {
+          width: 220px;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: none;
+          z-index: 10;
+          position: absolute;
+          top: 50px;
+          left: -1px;
+          background-color: #ffffff;
+          box-shadow: 2px 3.464px 6px rgba(1, 2, 2, 0.2); }
+          header .menu-bar .search-form .category .menu-list ul.menu-list_links li {
+            display: block;
+            width: 100%;
+            margin: 0;
+            padding: 10px 0;
+            border-left: 5px solid #ffffff; }
+            header .menu-bar .search-form .category .menu-list ul.menu-list_links li:hover ul.list-links_sub {
+              display: block; }
+            header .menu-bar .search-form .category .menu-list ul.menu-list_links li ul.sub-1 {
+              top: 0; }
+            header .menu-bar .search-form .category .menu-list ul.menu-list_links li ul.sub-2 {
+              top: 44px; }
+            header .menu-bar .search-form .category .menu-list ul.menu-list_links li ul.sub-3 {
+              top: 88px; }
+            header .menu-bar .search-form .category .menu-list ul.menu-list_links li ul.list-links_sub {
+              display: none;
+              position: absolute;
+              width: 219px;
+              left: 221px;
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              background-color: #ffffff;
+              box-shadow: 0 1px 3.464px 1px rgba(1, 2, 2, 0.2); }
+              header .menu-bar .search-form .category .menu-list ul.menu-list_links li ul.list-links_sub li {
+                display: block;
+                width: 100%;
+                margin: 0;
+                padding: 10px 0;
+                border-left: 5px solid #ffffff; }
+                header .menu-bar .search-form .category .menu-list ul.menu-list_links li ul.list-links_sub li:hover {
+                  border-left: 5px solid #2a2a2a; }
+                  header .menu-bar .search-form .category .menu-list ul.menu-list_links li ul.list-links_sub li:hover a {
+                    color: #ffffff; }
+                header .menu-bar .search-form .category .menu-list ul.menu-list_links li ul.list-links_sub li a {
+                  color: #000000; }
+            header .menu-bar .search-form .category .menu-list ul.menu-list_links li:hover {
+              background-color: #d58e32;
+              box-shadow: 0 2px 3.464px 1px rgba(1, 2, 2, 0.2);
+              border-left: 5px solid #2a2a2a; }
+              header .menu-bar .search-form .category .menu-list ul.menu-list_links li:hover a {
+                color: #ffffff; }
+            header .menu-bar .search-form .category .menu-list ul.menu-list_links li a {
+              margin: 0;
+              padding: 0;
+              text-decoration: none;
+              display: block;
+              color: #000000;
+              text-align: center; }
       header .menu-bar .search-form .category i {
         position: absolute;
         right: 10px;
         z-index: 0; }
+      header .menu-bar .search-form .category i:first-child {
+        color: #d58e32;
+        position: absolute;
+        left: 10px;
+        z-index: 0; }
+      header .menu-bar .search-form .category i:last-child {
+        position: absolute;
+        right: 10px;
+        z-index: 0; }
+      header .menu-bar .search-form .category:hover {
+        background-color: #d58e32; }
+        header .menu-bar .search-form .category:hover i:first-child,
+        header .menu-bar .search-form .category:hover i:last-child {
+          color: #fff; }
+        header .menu-bar .search-form .category:hover span {
+          color: #fff; }
     header .menu-bar .search-form .search-field {
       display: flex;
       align-items: center;
