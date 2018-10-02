@@ -222,4 +222,102 @@ header {
       }
     }
   }
+
+  .menu-hamburgers {
+    display: none;
+    z-index: 100;
+    justify-content: space-between;
+    margin: 10px 0;
+
+    button {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: none;
+      border-radius: 3px;
+      background-color: white;
+      transition-duration: 0.5s;
+      padding: 4px 0;
+      height: 31px;
+      width: 30px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $primary;
+      }
+    }
+
+    .hamburger {
+      flex-direction: column;
+
+      span {
+        display: block;
+        background-color: $form-border-color;
+        width: 20px;
+        height: 4px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .menu-bar {
+    .container {
+      height: 140px;
+    }
+
+    .first {
+      order: 1;
+      margin-bottom: 20px;
+    }
+
+    .second {
+      order: 2;
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  header {
+    .menu-bar {
+      height: 40px;
+
+      .first {
+        display: none;
+      }
+
+      .second {
+        display: none;
+        justify-content: center;
+        
+        .fa-search {
+          display: none;
+        }
+      }
+
+      .menu {
+        height: 410px;
+        padding: 20px 0;
+        justify-content: center;
+        z-index: 10;
+        background-color: $header-bg;
+
+        ul {
+          flex-direction: column;
+
+          li {
+            display: block;
+
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+
+    .menu-hamburgers {
+      display: flex;
+    }
+  }
 }
