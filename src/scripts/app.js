@@ -26,7 +26,6 @@
     var changeVisible = function(item) {
         change ? (item.style.display = "flex") : (item.style.display = "none");
         change = !change;
-        console.log('zmiana');
     };
 
     menuHamburger.addEventListener('click', function() {
