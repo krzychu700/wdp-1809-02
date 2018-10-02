@@ -10261,6 +10261,7 @@ header .menu-bar {
         font-size: 14px;
         position: relative;
         z-index: 1; }
+
     header .menu-bar .search-form .search-field {
       display: flex;
       align-items: center;
@@ -10341,6 +10342,7 @@ footer .bottom-bar {
   padding: 5px 10px;
   font-weight: 400;
   z-index: -10; }
+
 
 .btn-outline {
   display: inline-block;
@@ -10500,6 +10502,7 @@ footer .bottom-bar {
   .product-box:hover .btn-main-small {
     z-index: 1;
     background-color: #d58e32; }
+
   .product-box .photo {
     position: relative;
     padding: 80% 10px 0 10px;
