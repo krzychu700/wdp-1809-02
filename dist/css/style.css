@@ -6416,6 +6416,7 @@ a.text-dark:hover, a.text-dark:focus {
 .product-box .content .stars span.fa-pull-right.full,
 .far.fa-pull-right,
 .product-box .content .stars span.fa-pull-right,
+
 .fal.fa-pull-right,
 .fab.fa-pull-right {
   margin-left: .3em; }
@@ -9364,6 +9365,7 @@ readers do not read off random characters that represent icons */
   content: "\f5bf"; }
 
 .fa-star:before, .product-box .content .stars span:before {
+
   content: "\f005"; }
 
 .fa-star-and-crescent:before {
@@ -10093,7 +10095,9 @@ readers do not read off random characters that represent icons */
 
 .fa,
 .fas,
+
 .product-box .content .stars span.full {
+
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
@@ -10124,7 +10128,9 @@ readers do not read off random characters that represent icons */
 
 
 .far,
+
 .product-box .content .stars span {
+
   font-family: 'Font Awesome 5 Free';
   font-weight: 400; }
 
@@ -10532,12 +10538,14 @@ footer .bottom-bar {
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px; }
+
     .product-box .content .stars span {
       text-decoration: none;
       color: #2a2a2a; }
       .product-box .content .stars span.star-hover {
         color: #d58e32;
         font-weight: 900; }
+
   .product-box .line {
     margin: 0 10px;
     border-bottom: 1px solid #2a2a2a;
