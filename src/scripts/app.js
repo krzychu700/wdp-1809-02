@@ -33,3 +33,4 @@
     menuSearchButton.addEventListener('click', function() {
         changeVisible(menuSearch)});
 })();
+

@@ -80,5 +80,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .price-old {
+        display: inline-flex;
+        text-decoration: line-through;
+        opacity: 0.7;
+        margin-right: 5px;
+        font-size: 13px;
+      }
+    }
   }
 }
