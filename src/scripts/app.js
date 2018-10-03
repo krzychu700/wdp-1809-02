@@ -5,26 +5,28 @@
 
     for (var i = 0; i < btnFavorite.length; i++) {
 	    btnFavorite[i].addEventListener('click', function (event) {
-        var classActive = this.classList;
-        if (classActive.contains('active')){
-            this.classList.remove('active');
-        } else {
-            this.className += ' active';
-        }
-      }, false);
+            var classActive = this.classList;
+            if (classActive.contains('active')){
+                this.classList.remove('active');
+            } else {
+                this.className += ' active';
+            }
+        }, false);
     } 
   
     var responsiveStep = 568;
     var change = window.innerWidth > responsiveStep ? false : true;
+   
     //buttons for menu hamburger and search
     var menuHamburger = document.getElementById('menuHamburger');
     var menuSearchButton = document.getElementById('menuSearchButton');
+    
     //menu
     var menuList = document.getElementById('menuList');
     var menuSearch = document.getElementById('menuSearch');
 
     window.addEventListener('resize', function() {
-        if(window.innerWidth > responsiveStep) {
+        if (window.innerWidth > responsiveStep) {
             menuList.style.display = "flex";
             menuSearch.style.display = "flex";
             change = false;
