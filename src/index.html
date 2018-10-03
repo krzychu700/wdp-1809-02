@@ -53,8 +53,13 @@
     </div>
     <div class="menu-bar">
       <div class="container">
+        <div class="menu-hamburgers">
+          <button id="menuHamburger" class="hamburger"><span></span><span></span><span></span></button>
+          <button id="menuSearchButton"><i class="fa fa-search"></i></button>
+        </div>
         <div class="row align-items-center">
           <div class="col align-items-center">
+          <div id="menuSearch" class="col second">
             <form action="" class="search-form">
               <div class="category">
                   <div class="menu-list">
@@ -87,7 +92,7 @@
               </div>
             </form>
           </div>
-          <div class="col-auto menu">
+          <div id="menuList" class="col first menu">
             <ul>
               <li><a href="#" class="active">Home</a></li>
               <li><a href="#">Furniture</a></li>
@@ -105,8 +110,8 @@
   <div class="section--features">
     <div class="container">
       <div class="row">
-        <div class="col">
-          <div class="feature-box active">
+        <div class="col-lg-3 col-md-6 col-12">
+          <a href="#" class="feature-box active">
             <div class="icon">
               <i class="fas fa-truck"></i>
             </div>
@@ -114,10 +119,10 @@
               <h5>Free shipping</h5>
               <p>All orders</p>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="col">
-          <div class="feature-box">
+        <div class="col-lg-3 col-md-6 col-12">
+          <a href="#" class="feature-box">
             <div class="icon">
               <i class="fas fa-headphones"></i>
             </div>
@@ -125,10 +130,10 @@
               <h5>24/7 customer</h5>
               <p>support</p>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="col">
-          <div class="feature-box">
+        <div class="col-lg-3 col-md-6 col-12">
+          <a href="#" class="feature-box">
             <div class="icon">
               <i class="fas fa-reply-all"></i>
             </div>
@@ -136,10 +141,10 @@
               <h5>Money back</h5>
               <p>guarantee</p>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="col">
-          <div class="feature-box">
+        <div class="col-lg-3 col-md-6 col-12">
+          <a href="#" class="feature-box">
             <div class="icon">
               <i class="fas fa-bullhorn"></i>
             </div>
@@ -147,7 +152,7 @@
               <h5>Member discount</h5>
               <p>First order</p>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -266,6 +271,39 @@
                 <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
               </div>
               <div class="price">
+                <span class="price-old">$ 45.00</span>
+                <div class="btn-main-small no-hover">$ 30.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="product-box">
+            <div class="photo">
+              <div class="sale">sale</div>
+              <div class="buttons">
+                <a href="#" class="btn-main-small">Quick View</a>
+                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+              </div>
+            </div>
+            <div class="content">
+              <h5>Aenean Ru Bristique</h5>
+              <div class="stars">
+                <a href="#" class="full"></a>
+                <a href="#" class="full"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="actions">
+              <div class="outlines">
+                <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+              </div>
+              <div class="price">
+                <span class="price-old">$ 45.00</span>
                 <div class="btn-main-small no-hover">$ 30.00</div>
               </div>
             </div>
@@ -359,6 +397,7 @@
                 <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
               </div>
               <div class="price">
+                <span class="price-old">$ 45.00</span>
                 <div class="btn-main-small no-hover">$ 30.00</div>
               </div>
             </div>
@@ -390,37 +429,7 @@
                 <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
               </div>
               <div class="price">
-                <div class="btn-main-small no-hover">$ 30.00</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="product-box">
-            <div class="photo">
-              <div class="sale">sale</div>
-              <div class="buttons">
-                <a href="#" class="btn-main-small">Quick View</a>
-                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
-              </div>
-            </div>
-            <div class="content">
-              <h5>Aenean Ru Bristique</h5>
-              <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="line"></div>
-            <div class="actions">
-              <div class="outlines">
-                <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
-                <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
-              </div>
-              <div class="price">
+                <span class="price-old">$ 45.00</span>
                 <div class="btn-main-small no-hover">$ 30.00</div>
               </div>
             </div>
@@ -448,7 +457,7 @@
       </div>
       <div class="row">
         <div class="col-4">
-          <div class="post-box">
+          <a href="#" class="post-box">
             <div class="cover">
               <div class="details">
                 <div class="date">
@@ -464,13 +473,13 @@
               <p>Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo
                 vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
               <div class="more">
-                <a href="#" class="btn-main">Read more</a>
+                <div class="btn-main">Read more</div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-4">
-          <div class="post-box">
+          <a href="#" class="post-box">
             <div class="cover">
               <div class="details">
                 <div class="date">
@@ -486,13 +495,13 @@
               <p>Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo
                 vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
               <div class="more">
-                <a href="#" class="btn-main">Read more</a>
+                <div class="btn-main">Read more</div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-4">
-          <div class="post-box">
+          <a href="#" class="post-box">
             <div class="cover">
               <div class="details">
                 <div class="date">
@@ -508,10 +517,10 @@
               <p>Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo
                 vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
               <div class="more">
-                <a href="#" class="btn-main">Read more</a>
+                <div class="btn-main">Read more</div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -595,6 +604,7 @@
     crossorigin="anonymous"></script>
   <script src="./scripts/bootstrap.min.js"></script>
   <script src="./scripts/app.js"></script>
+  <script src="./scripts/cart.js"></script>
 </body>
 
 </html>
