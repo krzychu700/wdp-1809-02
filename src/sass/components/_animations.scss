@@ -1,0 +1,96 @@
+%anim {
+    transition: all 0.25s linear;
+    // transition: border-color linear 0.25s;
+    // transition: color linear 0.25s;
+}
+
+.btn-outline {
+    @extend %anim;
+}
+
+.btn-main {
+    @extend %anim;
+}
+
+
+header {
+    .top-bar {
+        ul {
+            li {
+                a {
+                    @extend %anim;
+                }
+            }
+        }
+    }
+
+    .company-claim {
+        .cart {
+            .cart-box {
+                .cart-icon {
+                    @extend %anim;
+                }
+            }
+        }
+    }
+
+    .menu-bar {
+        .menu {
+            ul {
+                li {
+                    a {
+                        @extend %anim;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.panel-bar {
+    .menu {
+        ul {
+            li {
+                a {
+                    @extend %anim;
+                }
+            }
+        }
+    }
+
+    .dots {
+        ul {
+            li {
+                a {
+                    @extend %anim;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .footer-menu {
+        .menu-wrapper {
+            ul {
+                li {
+                    a {
+                        @extend %anim;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-bar {
+        .socialmedia {
+            ul {
+                li {
+                    a {
+                        @extend %anim;
+                    }
+                }
+            }
+        }
+    }
+}
