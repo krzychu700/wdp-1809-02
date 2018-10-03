@@ -44,6 +44,12 @@ header {
             }
         }
     }
+
+    .search-form {
+        .category {
+            @extend %anim;
+        }
+    }
 }
 
 .panel-bar {
@@ -65,6 +71,16 @@ header {
                 }
             }
         }
+    }
+}
+
+.feature-box {
+    i {
+        @extend %anim;
+    }
+
+    .content {
+        @extend %anim;
     }
 }
 
