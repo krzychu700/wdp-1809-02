@@ -61,10 +61,12 @@
         justify-content: space-between;
         .btn-main-small {
           padding: 5px 10px;
+          
           @media (max-width: 1200px){
             font-size: 12px;
             padding: 5px;
           }
+
           @media (max-width: 1024px){
             font-size: 13px;
           }
@@ -75,18 +77,22 @@
     .content {
       text-align: center;
       padding: 20px;
+
       @media (max-width: 1200px){
         padding: 5px 5px 10px;
       }
+
       @media (max-width: 1024px){
         padding: 15px;
       }
+
       h5 {
         color: $primary;
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 1px;
       }
+
       .stars {
         a {
           text-decoration: none;
@@ -122,23 +128,28 @@
       align-items: center;
       flex-wrap: wrap;
       height: 60px;
+
       @media (max-width: 1200px){
         padding: 5px;
       }
+
       @media (max-width: 1024px){
         padding: 15px;
       }
+
       .outlines {
         width: 40%;
         margin: 0;
         padding: 0;
       }
+
       .price {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         margin: 5px 0 0;
         width: 57%;
+
         @media (max-width: 1024px){
           justify-content: flex-end;
         }
@@ -148,6 +159,7 @@
           opacity: 0.7;
           margin-right: 5px;
           font-size: 13px;
+
           @media (max-width: 1200px){
             font-size: 12px;
           }
