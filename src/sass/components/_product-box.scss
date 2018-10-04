@@ -1,5 +1,10 @@
 .chair-products, .sofa-products, .table-products, .dining-products {
   display: none;
+  animation: fadein 2s;
+}
+
+.bed-products {
+  animation: fadein 2s;
 }
 
 .product-box {
@@ -96,5 +101,14 @@
         font-size: 13px;
       }
     }
+  }
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
   }
 }
