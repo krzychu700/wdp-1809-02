@@ -26,6 +26,7 @@
     background-color: #ffffff;
     border: 1px solid #e1e1e1;
     margin: 0 auto 2rem;
+
     &:hover {
       .btn-main-small {
         z-index: 1;
@@ -35,7 +36,7 @@
 
     .photo {
       position: relative;
-      padding: 80% 10px 0 10px;
+      padding: 80% 10px 0;
       background: {
         color: #f4f5f7;
         size: contain;
@@ -53,12 +54,13 @@
         background-color: #292929;
         border-radius: 50%;
         color: #ffffff;
-        padding: 30px 15px 5px 15px;
+        padding: 30px 15px 5px;
       }
       
       .buttons {
         display: flex;
         justify-content: space-between;
+
         .btn-main-small {
           padding: 5px 10px;
           
@@ -110,6 +112,7 @@
       margin: 0 10px;
       border-bottom: 1px solid #2a2a2a;
       position: relative;
+      
       &::before {
         content: '';
         position: absolute;
@@ -153,6 +156,7 @@
         @media (max-width: 1024px){
           justify-content: flex-end;
         }
+
         .price-old {
           display: inline-flex;
           text-decoration: line-through;
@@ -164,6 +168,7 @@
             font-size: 12px;
           }
         }
+
         .no-hover {
           padding: 5px;
         }
