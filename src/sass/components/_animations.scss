@@ -1,6 +1,6 @@
 %anim {
     // transition: all 0.25s linear;
-    transition: background-color 0.25s linear, color linear 0.25s, border-color linear 0.25s;
+    transition: background-color 0.25s linear, color 0.25s linear, border-color 0.25s linear;
 }
 
 .btn-outline, .btn-main, .anim-class {
