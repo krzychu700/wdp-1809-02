@@ -1,4 +1,3 @@
-
 {
   "name": "kodilla-projekt",
   "version": "1.0.0",
@@ -10,7 +9,6 @@
     "watch:images": "onchange \"src/images/**/*\" -- npm run copy:images",
     "watch:scripts": "onchange \"src/scripts/**/*\" -- npm run copy:scripts",
     "watch:webfonts": "onchange \"src/webfonts/**/*\" -- npm run copy:webfonts",
-    "watch:sass": "node-sass src/sass/style.scss --source-map true -w -o dist/css",
     "watch:browsersync": "browser-sync start --server --watch --files ./ --cwd dist",
     "clean": "rimraf dist",
     "copy:html": "rimraf dist/**/*.html && cpy \"**/*.html\" \"../dist\" --cwd=src --parents",
