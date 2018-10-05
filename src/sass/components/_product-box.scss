@@ -56,14 +56,14 @@
         color: #ffffff;
         padding: 30px 15px 5px;
       }
-      
+
       .buttons {
         display: flex;
         justify-content: space-between;
 
         .btn-main-small {
           padding: 5px 10px;
-          
+
           @media (max-width: 1200px){
             font-size: 12px;
             padding: 5px;
@@ -101,6 +101,7 @@
           color: rgb(42,42,42);
           @extend .far;
           @extend .fa-star;
+
           &.full {
             @extend .fas;
           }
@@ -112,7 +113,7 @@
       margin: 0 10px;
       border-bottom: 1px solid #2a2a2a;
       position: relative;
-      
+
       &::before {
         content: '';
         position: absolute;
