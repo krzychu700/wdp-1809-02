@@ -3,6 +3,6 @@
     transition: background-color 0.25s linear, color 0.25s linear, border-color 0.25s linear;
 }
 
-.btn-outline, .btn-main, .anim-class {
+.btn-outline, .btn-main, .basic-animation {
     @extend %anim;
 }
