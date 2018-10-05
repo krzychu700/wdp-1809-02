@@ -1,4 +1,4 @@
-// (function () {
+(function () {
 var productsCard = document.querySelectorAll(".js-products");
 var jsBed = document.getElementsByClassName("bed-products");
 var jsChair = document.getElementsByClassName("chair-products");
@@ -51,30 +51,51 @@ function dotsCounter() {
 }
 
 function dotsChecker() {
+    dotsCounter();
     var bedProducts = jsBed[0].querySelectorAll(".product-box").length;
     var chairProducts = jsChair[0].querySelectorAll(".product-box").length;
+    var sofaProducts = jsSofa[0].querySelectorAll(".product-box").length;
+    var tableProducts = jsTable[0].querySelectorAll(".product-box").length;
+    var diningProducts = jsDining[0].querySelectorAll(".product-box").length;
+
     if ((bedProducts > 8) && (productsCard[0].classList.contains("active"))) {
         do {
             dotsCreator();
-            bedProducts - 8;
+            bedProducts-=8;
         }
-        while (bedProducts < 8);
-    } else {
-        dotsCounter();
-    };
+        while (8 < bedProducts);
+    } ;
     if ((chairProducts > 8) && (productsCard[1].classList.contains("active"))) {
         do {
             dotsCreator();
-            chairProducts = chairProducts - 8;
-            console.log(chairProducts);
+            chairProducts-=8;
         }
-        while (chairProducts < 8);
-    } else {
-        dotsCounter();
+        while (8 < chairProducts);
+    };
+    if ((sofaProducts > 8) && (productsCard[2].classList.contains("active"))) {
+        do {
+            dotsCreator();
+            sofaProducts-=8;
+        }
+        while (8 < sofaProducts);
+    };
+    if ((tableProducts > 8) && (productsCard[3].classList.contains("active"))) {
+        do {
+            dotsCreator();
+            tableProducts-=8;
+        }
+        while (8 < tableProducts);
+    };
+    if ((diningProducts > 8) && (productsCard[4].classList.contains("active"))) {
+        do {
+            dotsCreator();
+            diningProducts-=8;
+        }
+        while (8 < diningProducts);
     }
 }
 
-// dotsChecker();
+dotsChecker();
 
 for (var i = 0; i < productsCard.length; i++) {
 
@@ -90,4 +111,4 @@ for (var i = 0; i < productsCard.length; i++) {
     });
 }
 
-// })();
+})();
