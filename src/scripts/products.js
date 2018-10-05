@@ -40,7 +40,7 @@ function dotsCreator() {
     var linkCreator = document.createElement("a");
     var child = jsDoots.appendChild(elemCreator);
     child.appendChild(linkCreator);
-    child.setAttribute("class", "dynamic-dot");
+    child.setAttribute("class", "dynamic-dot basic-animation");
 }
 
 function dotsCounter() {
