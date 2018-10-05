@@ -76,8 +76,12 @@ typings/
 # Serverless directories
 .serverless
 
+<<<<<<< HEAD
 # dist directories
 
+=======
+# Dist folder todo:remove me add the end of the project to see changes on GH pages
+>>>>>>> e109bc08fbb125d4903c0e773f11e2fb5c67640e
 dist
 
 # End of https://www.gitignore.io/api/node
