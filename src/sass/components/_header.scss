@@ -330,3 +330,10 @@ header {
     }
   }
 }
+
+@media (max-width: 421px) {
+  .copyright,
+  .socialmedia {
+    padding: 15px;
+  }
+}
