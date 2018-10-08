@@ -19,7 +19,7 @@
             cartCounter[0].innerHTML = "99999";
             cartIcon[0].style.width = '90px';
             cartCounter[0].style.width = '60px';
-        };
+        }
     }
 
     cartSizeCheck();
