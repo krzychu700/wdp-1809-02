@@ -1,29 +1,24 @@
 @media (max-width: 767px) {
     header {
-        .top-bar {
-            .text-left {
-                padding-right: 5px;
+        .top-bar-left-side {
+            padding-right: 5px;
+        }
 
-                ul li {
-                    margin-right: 0.5rem;
-                }
-            }
+        .top-bar-right-side {
+            padding-left: 5px;
+        }
 
-            .text-right {
-                padding-left: 5px;
+        .mobile-item {
+            margin-left: 0.25rem !important;
+            margin-right: 0.25rem !important;
+        }
 
-                ul li {
-                    margin-left: 0.5rem;
+        .mobile-link {
+            font-size: 0 !important;
+        }
 
-                    a {
-                        font-size: 0;
-                    }
-
-                    i {
-                        font-size: 15px;
-                    }
-                }
-            }
+        .mobile-icon {
+            font-size: 15px;
         }
 
         .mobile-direction {
