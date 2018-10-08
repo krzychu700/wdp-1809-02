@@ -1,0 +1,29 @@
+.section--gallery {
+
+    .gallery-container {
+        display: flex;
+        width: 100%;
+
+    .furniture-gallery {
+        height: 600px;
+        background-color: aqua;
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        
+        .gallery-area {
+            height: 100%;
+        }
+    }
+
+    .big-picture-area {
+        height: 600px;
+        background-color: tan;
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 50%;
+    }
+}
+}
