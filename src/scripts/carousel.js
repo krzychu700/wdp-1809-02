@@ -21,29 +21,17 @@
 
     if (vPortWidth >= 1025) {
       box = pBoxL / 4;
-      for (i = 0; i < box; i++) {
-        carouselDots.insertAdjacentHTML("beforeend", dotsTempl);
-      }
-      return boxArray.push(box);
     } else if (vPortWidth >= 990) {
       box = pBoxL / 3;
-      for (i = 0; i < box; i++) {
-        carouselDots.insertAdjacentHTML("beforeend", dotsTempl);
-      }
-      return boxArray.push(box);
     } else if (vPortWidth >= 568) {
       box = pBoxL / 2;
-      for (i = 0; i < box; i++) {
-        carouselDots.insertAdjacentHTML("beforeend", dotsTempl);
-      }
-      return boxArray.push(box);
     } else if (vPortWidth <= 567) {
       box = pBoxL;
-      for (i = 0; i < box; i++) {
-        carouselDots.insertAdjacentHTML("beforeend", dotsTempl);
-      }
-      return boxArray.push(box);
     }
+    for (i = 0; i < box; i++) {
+      carouselDots.insertAdjacentHTML("beforeend", dotsTempl);
+    }
+    return boxArray.push(box);
   }
 
   addDots();
@@ -105,7 +93,7 @@
 
   var isDown = false;
 
-  pCarousel.addEventListener("mousedown", (e) => {
+  pCarousel.addEventListener("mousedown", e => {
     isDown = true;
     pCarousel.classList.add("mouse-drag");
   });
@@ -120,7 +108,7 @@
     pCarousel.classList.remove("mouse-drag");
   });
 
-  pCarousel.addEventListener("mousemove", (e) => {
+  pCarousel.addEventListener("mousemove", e => {
     if (!isDown) return;
     e.preventDefault();
     const y = e.pageX - (pCarousel.offsetLeft + pCarousel.offsetWidth);
