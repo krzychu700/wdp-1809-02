@@ -27,7 +27,7 @@ header {
       margin-right: 1.5rem;
 
       i {
-        margin-left: 5px
+        margin-left: 5px;
       }
     }
 
@@ -35,7 +35,7 @@ header {
       margin-left: 1.5rem;
 
       i {
-        margin-right: 5px
+        margin-right: 5px;
       }
     }
   }
@@ -43,7 +43,7 @@ header {
   .company-claim {
     background-color: $header-bg;
 
-    .container>.row {
+    .container > .row {
       height: 145px;
     }
 
@@ -115,14 +115,14 @@ header {
     box-shadow: 2px 3.464px 6px rgba(1, 2, 2, 0.2);
     background-color: #ffffff;
 
-    .container>.row {
+    .container > .row {
       height: 84px;
     }
 
     .menu {
       display: flex;
       align-self: stretch;
-      
+
       ul {
         margin: 0;
         padding: 0;
@@ -159,7 +159,7 @@ header {
         }
       }
     }
-  
+
     .search-form {
       border: 1px solid $form-border-color;
       display: inline-flex;
@@ -173,14 +173,6 @@ header {
         align-items: center;
         position: relative;
 
-        span {
-        color: #2a2a2a;
-        position: relative;
-        left: 45px;
-        top: -5px;
-        font-size: 14px;
-        }
-
         .menu-list {
           position: relative;
           display: inline-flex;
@@ -190,7 +182,7 @@ header {
           margin-right: 2px;
 
           &:hover {
-            ul.menu-list_links {
+            ul.menu-list-links {
               display: block;
             }
           }
@@ -200,8 +192,16 @@ header {
             position: absolute;
             top: 17px;
           }
-       
-          ul.menu-list_links {
+
+          .menu-list-placeholder {
+            color: #2a2a2a;
+            position: relative;
+            left: 45px;
+            top: -5px;
+            font-size: 14px;
+          }
+
+          ul.menu-list-links {
             width: 220px;
             list-style-type: none;
             margin: 0;
@@ -213,7 +213,7 @@ header {
             left: -1px;
             background-color: #ffffff;
             box-shadow: 2px 3.464px 6px rgba(1, 2, 2, 0.2);
-            
+
             li {
               display: block;
               width: 100%;
@@ -222,20 +222,20 @@ header {
               border-left: 5px solid #ffffff;
 
               &:hover {
-                ul.menu-links_sub {
+                ul.menu-links-sub {
                   display: block;
                 }
               }
 
-              ul.links-height_2 {
+              ul.links-height-2 {
                 top: 44px;
               }
 
-              ul.links-height_3 {
+              ul.links-height-3 {
                 top: 88px;
               }
 
-              ul.menu-links_sub {
+              ul.menu-links-sub {
                 display: none;
                 position: absolute;
                 width: 219px;
@@ -255,6 +255,7 @@ header {
 
                   &:hover {
                     border-left: 5px solid #2a2a2a;
+
                     a {
                       color: #ffffff;
                     }
@@ -270,6 +271,7 @@ header {
                 background-color: $primary;
                 box-shadow: 0 2px 3.464px 1px rgba(1, 2, 2, 0.2);
                 border-left: 5px solid #2a2a2a;
+
                 a {
                   color: #ffffff;
                 }
@@ -309,12 +311,12 @@ header {
         &:hover {
           background-color: $primary;
 
-          i:first-child,  
+          i:first-child,
           i:last-child {
             color: #fff;
           }
 
-          .menu-list_placeholder {
+          .menu-list-placeholder {
             color: #fff;
           }
         }
@@ -411,7 +413,7 @@ header {
       .second {
         display: none;
         justify-content: center;
-        
+
         .fa-search {
           display: none;
         }
