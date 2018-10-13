@@ -78,3 +78,30 @@ footer {
     }
   }
 }
+
+@media (max-width: 600px) {
+  footer {
+    .bottom-bar {
+      .container > .row {
+        height: 450px;
+      }
+
+      .copyright {
+        order: 2;
+      }
+
+      .socialmedia {
+        ul {
+          li {
+            text-align: center;
+            display: block;
+
+            a {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
