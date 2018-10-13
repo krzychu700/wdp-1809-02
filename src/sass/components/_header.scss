@@ -426,12 +426,14 @@ header {
 
         ul {
           flex-direction: column;
+          width: 100%;
 
           li {
             display: block;
 
             a {
               color: white;
+              justify-content: center;
             }
           }
         }
@@ -441,5 +443,12 @@ header {
     .menu-hamburgers {
       display: flex;
     }
+  }
+}
+
+@media (max-width: 421px) {
+  .copyright,
+  .socialmedia {
+    padding: 15px;
   }
 }
