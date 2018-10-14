@@ -9,17 +9,18 @@
 @import "fontawesome/regular";
 
 @import "components/header";
+@import "components/product-box";
+@import "components/section--features";
+@import "components/feature-box";
+@import "components/post-box";
+@import "components/panel-bar";
 @import "components/footer";
 @import "components/button";
-@import "components/feature-box";
-@import "components/panel-bar";
-@import "components/post-box";
-@import "components/product-box";
 @import "components/animations";
 @import "components/brands";
-@import "components/section--features";
 
 @import "media";
+@import "components/feedback";
 
 body {
   font-family: 'Poppins', sans-serif;
