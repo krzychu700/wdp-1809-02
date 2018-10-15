@@ -11,14 +11,14 @@
     height: 100%;
 
     &.mouse-drag {
-      cursor: grabbing;
       cursor: -webkit-grabbing;
+      cursor: grabbing;
       user-select: none;
     }
 
     &:hover {
-      cursor: grabbing;
       cursor: -webkit-grabbing;
+      cursor: grabbing;
     }
 
     .col-products {
