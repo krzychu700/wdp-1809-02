@@ -52,18 +52,10 @@
 
   // This function adjusts the carousel movement
 
-  function setCount(a, b, c, d) {
+  function setCount(a, c, d) {
     var slide = (pCarousel.style.transform =
       "translateX(-" + a * (d / c) + "px)");
-    if (b >= 1025) {
       return slide;
-    } else if (b >= 990) {
-      return slide;
-    } else if (b >= 568) {
-      return slide;
-    } else if (b <= 567) {
-      return slide;
-    }
   }
 
   // On dots click event function
@@ -76,7 +68,7 @@
         onActive[i].classList.remove("active");
       }
       if (onActive[i] === e.target) {
-        setCount(move * i, viewWidth, boxArray, pBoxL);
+        setCount(move * i, boxArray, pBoxL);
         pCarousel.style.transition = "transform 0.5s ease";
       }
     }
