@@ -6,18 +6,18 @@
   padding-right: 15px;
   padding-left: 15px;
 
-  @media (max-width: 1024px){
+  @media (max-width: 1024px) {
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
 
-  @media (max-width: 990px){
+  @media (max-width: 990px) {
     flex: 0 0 50%;
     max-width: 50%;
     margin: 0 auto;
   }
 
-  @media (max-width: 568px){
+  @media (max-width: 568px) {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -30,22 +30,24 @@
     &:hover {
       .btn-main-small {
         z-index: 1;
+      }
+
+      .no-hover {
         background-color: $primary;
       }
     }
 
-
     .photo {
       position: relative;
-      padding: 80% 10px 0;
-      background: {
-        color: #f4f5f7;
-        size: contain;
-        position: center;
-        repeat: no-repeat;
-      }
       overflow: hidden;
       align-items: flex-end;
+
+      img {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
 
       .sale {
         position: absolute;
@@ -59,18 +61,21 @@
       }
 
       .buttons {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
 
         .btn-main-small {
           padding: 5px 10px;
 
-          @media (max-width: 1200px){
+          @media (max-width: 1200px) {
             font-size: 12px;
             padding: 5px;
           }
 
-          @media (max-width: 1024px){
+          @media (max-width: 1024px) {
             font-size: 13px;
           }
         }
@@ -81,11 +86,11 @@
       text-align: center;
       padding: 20px;
 
-      @media (max-width: 1200px){
+      @media (max-width: 1200px) {
         padding: 5px 5px 10px;
       }
 
-      @media (max-width: 1024px){
+      @media (max-width: 1024px) {
         padding: 15px;
       }
 
@@ -99,8 +104,10 @@
       .stars {
         span {
           text-decoration: none;
-          color: rgb(42,42,42);
+          color: rgb(42, 42, 42);
+
           @extend .far;
+
           @extend .fa-star;
 
           &.star-hover {
@@ -139,11 +146,11 @@
       flex-wrap: wrap;
       height: 60px;
 
-      @media (max-width: 1200px){
+      @media (max-width: 1200px) {
         padding: 5px;
       }
 
-      @media (max-width: 1024px){
+      @media (max-width: 1024px) {
         padding: 15px;
       }
 
@@ -166,7 +173,7 @@
         margin: 5px 0 0;
         width: 57%;
 
-        @media (max-width: 1024px){
+        @media (max-width: 1024px) {
           justify-content: flex-end;
         }
 
@@ -177,12 +184,13 @@
           margin-right: 5px;
           font-size: 13px;
 
-          @media (max-width: 1200px){
+          @media (max-width: 1200px) {
             font-size: 12px;
           }
         }
 
         .no-hover {
+          z-index: 1;
           padding: 5px;
         }
       }
