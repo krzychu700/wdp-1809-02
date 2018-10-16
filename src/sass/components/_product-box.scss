@@ -25,7 +25,7 @@
   .product-box {
     background-color: #ffffff;
     border: 1px solid #e1e1e1;
-    margin: 0 auto 2rem;
+    margin: 20px auto;
 
     &:hover {
       .btn-main-small {
@@ -39,15 +39,15 @@
 
     .photo {
       position: relative;
-      padding: 80% 10px 0;
-      background: {
-        color: #f4f5f7;
-        size: contain;
-        position: center;
-        repeat: no-repeat;
-      };
       overflow: hidden;
       align-items: flex-end;
+
+      img {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
 
       .sale {
         position: absolute;
@@ -61,8 +61,11 @@
       }
 
       .buttons {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
 
         .btn-main-small {
           padding: 5px 10px;
@@ -155,6 +158,12 @@
         width: 40%;
         margin: 0;
         padding: 0;
+
+        a.active {
+          i {
+            color: $primary;
+          }
+        }
       }
 
       .price {
