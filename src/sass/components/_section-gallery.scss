@@ -78,7 +78,9 @@
             height: 395px;
             padding-left: 10px;
             background-image: url("https://images.pexels.com/photos/923192/pexels-photo-923192.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-            background-size: cover;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
 
             .gallery-icons {
               display: flex;
@@ -233,7 +235,7 @@
           justify-content: space-around;
           align-items: center;
           border: 2px solid #e2e2e2;
-          padding: 0 5px 0 5px;
+          padding: 0 5px;
         }
 
         .slider-box {
@@ -253,19 +255,31 @@
           }
         }
 
-        .slider-image {
-          width: 70px;
-          background-color: #cccccc;
-          opacity: 0.5;
+        .pictures-area {
+          width: 100%;
+          height: 88px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
 
-          &:hover {
-            cursor: pointer;
-          }
-
-          img {
+          .slider-image {
             width: 70px;
-            height: auto;
-            overflow: hidden;
+            background-color: #cccccc;
+
+            &:hover {
+              cursor: pointer;
+            }
+
+            .js-image {
+              height: 100%;
+              width: 100%;
+              object-fit: contain;
+              overflow: hidden;
+            }
+
+            .js-image-ovl {
+              opacity: 0.5;
+            }
           }
         }
 
