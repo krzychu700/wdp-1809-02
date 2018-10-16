@@ -13,6 +13,8 @@
     }
   }
 
+  cardChecker();
+
   function dotsCreator() {
     var elemCreator = document.createElement("li");
     var linkCreator = document.createElement("a");
