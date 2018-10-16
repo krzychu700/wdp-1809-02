@@ -145,18 +145,30 @@ function imageSelecter() {
 function tabChecker() {
   if (productsTabs[0].classList.contains("active")) {
     topFeatures();
+    topFeatures(); //funkcja dodana ponownie, by sprawdzic dzialanie na wiekszej ilosci danych, pozniej zostanie usunieta
+    topFeatures(); //funkcja dodana ponownie, by sprawdzic dzialanie na wiekszej ilosci danych, pozniej zostanie usunieta
+    topFeatures(); //funkcja dodana ponownie, by sprawdzic dzialanie na wiekszej ilosci danych, pozniej zostanie usunieta
     imageSelecter();
     sliderLength();
   } else if (productsTabs[1].classList.contains("active")) {
     topRatedChecker(); //nie posiadamy info o liczbie sprzedazy, wiec na ta chwile uzyje funkcji z najlepszymi ocenami
+    topRatedChecker(); //funkcja dodana ponownie, by sprawdzic dzialanie na wiekszej ilosci danych, pozniej zostanie usunieta
+    topRatedChecker(); //funkcja dodana ponownie, by sprawdzic dzialanie na wiekszej ilosci danych, pozniej zostanie usunieta
+    topRatedChecker(); //funkcja dodana ponownie, by sprawdzic dzialanie na wiekszej ilosci danych, pozniej zostanie usunieta
     imageSelecter();
     sliderLength();
   } else if (productsTabs[2].classList.contains("active")) {
-    topSeller();
+    topFeatures();
+    topFeatures(); //funkcja dodana ponownie, by sprawdzic dzialanie na wiekszej ilosci danych, pozniej zostanie usunieta
+    topFeatures(); //funkcja dodana ponownie, by sprawdzic dzialanie na wiekszej ilosci danych, pozniej zostanie usunieta
+    topFeatures(); //funkcja dodana ponownie, by sprawdzic dzialanie na wiekszej ilosci danych, pozniej zostanie usunieta
     imageSelecter();
     sliderLength();
   } else if (productsTabs[3].classList.contains("active")) {
     topRatedChecker();
+    topRatedChecker(); //funkcja dodana ponownie, by sprawdzic dzialanie na wiekszej ilosci danych, pozniej zostanie usunieta
+    topRatedChecker(); //funkcja dodana ponownie, by sprawdzic dzialanie na wiekszej ilosci danych, pozniej zostanie usunieta
+    topRatedChecker(); //funkcja dodana ponownie, by sprawdzic dzialanie na wiekszej ilosci danych, pozniej zostanie usunieta
     imageSelecter();
     sliderLength();
   };
