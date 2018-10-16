@@ -113,6 +113,7 @@
           &.star-hover {
             color: $primary;
             font-weight: 900;
+            cursor: pointer;
           }
 
           &.full {
@@ -158,8 +159,9 @@
         width: 40%;
         margin: 0;
         padding: 0;
+        cursor: pointer;
 
-        a.active {
+        span.active {
           i {
             color: $primary;
           }
