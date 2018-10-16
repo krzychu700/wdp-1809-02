@@ -16,18 +16,40 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-8 text-left top-bar-left-side">
             <ul>
-              <li class="mobile-item"><a href="#" class="basic-animation">USD <i class="fas fa-caret-down"></i></a></li>
-              <li class="mobile-item"><a href="#" class="basic-animation">English <i class="fas fa-caret-down"></i></a></li>
-              <li class="mobile-item"><a href="#" class="basic-animation">Help <i class="fas fa-caret-down"></i></a></li>
+              <li class="mobile-item">
+                <a href="#" class="basic-animation">USD
+                  <i class="fas fa-caret-down"></i>
+                </a>
+              </li>
+              <li class="mobile-item">
+                <a href="#" class="basic-animation">English
+                  <i class="fas fa-caret-down"></i>
+                </a>
+              </li>
+              <li class="mobile-item">
+                <a href="#" class="basic-animation">Help
+                  <i class="fas fa-caret-down"></i>
+                </a>
+              </li>
             </ul>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-4 text-right top-bar-right-side">
             <ul>
-              <li class="mobile-item"><a href="#" class="mobile-link basic-animation"><i class="fas fa-user mobile-icon"></i>
-                  Login</a></li>
-              <li class="mobile-item"><a href="#" class="mobile-link basic-animation"><i class="fas fa-lock mobile-icon"></i>
-                  Register</a></li>
-              <li class="mobile-item"><a href="#" class="mobile-link basic-animation"><i class="fas fa-bars mobile-icon"></i></a></li>
+              <li class="mobile-item">
+                <a href="#" class="mobile-link basic-animation">
+                  <i class="fas fa-user mobile-icon"></i>
+                  Login</a>
+              </li>
+              <li class="mobile-item">
+                <a href="#" class="mobile-link basic-animation">
+                  <i class="fas fa-lock mobile-icon"></i>
+                  Register</a>
+              </li>
+              <li class="mobile-item">
+                <a href="#" class="mobile-link basic-animation">
+                  <i class="fas fa-bars mobile-icon"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -37,7 +59,9 @@
       <div class="container">
         <div class="row align-items-center mobile-direction">
           <div class="col text-left phone-number mobile-right mobile-right--bottom">
-            <p><i class="fas fa-mobile-alt"></i> 2345 - 3560 - 222</p>
+            <p>
+              <i class="fas fa-mobile-alt"></i>
+              2345 - 3560 - 222</p>
           </div>
           <div class="col text-center mobile-center">
             <a href="#"><img src="./images/logo.png"></a>
@@ -56,42 +80,91 @@
     <div class="menu-bar">
       <div class="container">
         <div class="menu-hamburgers">
-          <button id="menuHamburger" class="hamburger"><span></span><span></span><span></span></button>
-          <button id="menuSearchButton"><i class="fa fa-search"></i></button>
+          <button id="menuHamburger" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span></button>
+          <button id="menuSearchButton">
+            <i class="fa fa-search"></i>
+          </button>
         </div>
         <div class="row align-items-center">
           <div id="menuSearch" class="col second">
             <form action="" class="search-form">
               <div class="category basic-animation">
-                <i class="fas fa-list-ul"></i>
-                <select name="" id="">
-                  <option disabled selected value="">Select a category</option>
-                  <option value="1">Select 1</option>
-                  <option value="2">Select 2</option>
-                  <option value="3">Select 3</option>
-                </select>
+                <div class="menu-list">
+                  <i class="fas fa-list-ul"></i>
+                  <span class="menu-list-placeholder">Select a category</span>
+                  <ul class="menu-list-links">
+                    <li>
+                      <a href="#">Link 1</a>
+                    </li>
+                    <li>
+                      <a href="#">Link 2</a>
+                      <ul class="menu-links-sub links-height-2">
+                        <li>
+                          <a href="#">Link 1</a>
+                        </li>
+                        <li>
+                          <a href="#">Link 2</a>
+                        </li>
+                        <li>
+                          <a href="#">Link 3</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Link 3</a>
+                      <ul class="menu-links-sub links-height-3">
+                        <li>
+                          <a href="#">Link 1</a>
+                        </li>
+                        <li>
+                          <a href="#">Link 2</a>
+                        </li>
+                        <li>
+                          <a href="#">Link 3</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
                 <i class="fas fa-caret-down"></i>
               </div>
               <div class="search-field">
                 <input placeholder="Search products..." type="text">
-                <button><i class="fa fa-search"></i></button>
+                <button>
+                  <i class="fa fa-search"></i>
+                </button>
               </div>
             </form>
           </div>
           <div id="menuList" class="col first menu">
             <ul>
-              <li><a href="#" class="active basic-animation">Home</a></li>
-              <li><a href="#" class="basic-animation">Furniture</a></li>
-              <li><a href="#" class="basic-animation">Chair</a></li>
-              <li><a href="#" class="basic-animation">Table</a></li>
-              <li><a href="#" class="basic-animation">Sofa</a></li>
-              <li><a href="#" class="basic-animation">Bedroom</a></li>
-              <li><a href="#" class="basic-animation">Blog</a></li>
-            </ul>
+              <li>
+                <a href="#" class="active basic-animation">Home</a>
+              </li>
+              <li>
+                <a href="#" class="basic-animation">Furniture</a>
+              </li>
+              <li>
+                <a href="#" class="basic-animation">Chair</a>
+              </li>
+              <li>
+                <a href="#" class="basic-animation">Table</a>
+              </li>
+              <li>
+                <a href="#" class="basic-animation">Sofa</a>
+              </li>
+              <li>
+                <a href="#" class="basic-animation">Bedroom</a>
+              </li>
+              <li>
+                <a href="#" class="basic-animation">Blog</a>
+              </li>
           </div>
         </div>
       </div>
-    </div>
   </header>
   <div class="section--features">
     <div class="container">
@@ -170,6 +243,7 @@
         <div class="col-products">
           <div class="product-box">
             <div class="photo">
+              <img src="images/pBox-1.jpg" alt="pBox-1">
               <div class="sale">sale</div>
               <div class="buttons">
                 <a href="#" class="btn-main-small">Quick View</a>
@@ -1780,18 +1854,22 @@
       <div class="row">
         <div class="col-blog">
           <a href="#" class="post-box">
-            <div class="cover">
+            <div class="cover blog-post-1">
+              <img src="images/blog-1.jpg" alt="blog-1">
               <div class="details">
                 <div class="date">
-                  <i class="fas fa-calendar-alt"></i> 15 Jan 2016
+                  <i class="fas fa-calendar-alt"></i>
+                  15 Jan 2016
                 </div>
                 <div class="comments">
-                  <i class="fas fa-comments"></i> 4 Comments
+                  <i class="fas fa-comments"></i>
+                  4 Comments
                 </div>
               </div>
             </div>
             <div class="post-info">
-              <h5>Products That Fight Static </h5>
+              <h5>Products That Fight Static
+              </h5>
               <p>Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo
                 vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
               <div class="more">
@@ -1802,18 +1880,22 @@
         </div>
         <div class="col-blog">
           <a href="#" class="post-box">
-            <div class="cover">
+            <div class="cover blog-post-2">
+              <img src="images/blog-2.jpg" alt="blog-2">
               <div class="details">
                 <div class="date">
-                  <i class="fas fa-calendar-alt"></i> 15 Jan 2016
+                  <i class="fas fa-calendar-alt"></i>
+                  15 Jan 2016
                 </div>
                 <div class="comments">
-                  <i class="fas fa-comments"></i> 4 Comments
+                  <i class="fas fa-comments"></i>
+                  4 Comments
                 </div>
               </div>
             </div>
             <div class="post-info">
-              <h5>Products That Fight Static </h5>
+              <h5>Products That Fight Static
+              </h5>
               <p>Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo
                 vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
               <div class="more">
@@ -1824,18 +1906,22 @@
         </div>
         <div class="col-blog">
           <a href="#" class="post-box">
-            <div class="cover">
+            <div class="cover blog-post-3">
+              <img src="images/blog-3.jpg" alt="blog-3">
               <div class="details">
                 <div class="date">
-                  <i class="fas fa-calendar-alt"></i> 15 Jan 2016
+                  <i class="fas fa-calendar-alt"></i>
+                  15 Jan 2016
                 </div>
                 <div class="comments">
-                  <i class="fas fa-comments"></i> 4 Comments
+                  <i class="fas fa-comments"></i>
+                  4 Comments
                 </div>
               </div>
             </div>
             <div class="post-info">
-              <h5>Products That Fight Static </h5>
+              <h5>Products That Fight Static
+              </h5>
               <p>Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo
                 vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
               <div class="more">
@@ -1957,5 +2043,3 @@
   <script src="./scripts/cart.js"></script>
   <script src="./scripts/products.js"></script>
 </body>
-
-</html>
