@@ -72,7 +72,7 @@
     .flex-item-left {
       height: 100%;
       width: 25%;
-      background-image: url("https://cdn.pixabay.com/photo/2018/04/05/16/31/leisure-3293296_960_720.png");
+      background-image: url("/src/images/chair1.png");
       background-size: 200px;
       background-position: 154px -14px;
       align-self: auto;
@@ -104,7 +104,7 @@
       height: 100%;
       width: 25%;
       background-position: 166px -12px;
-      background-image: url(https://cdn.pixabay.com/photo/2018/05/15/08/54/live-3402501_960_720.png);
+      background-image: url("/src/images/chair2.png");
       background-size: 167px;
       align-self: auto;
     }
@@ -132,7 +132,7 @@
 
     .flex-item-small-left {
       flex: 2;
-      background-image: url("https://cdn.pixabay.com/photo/2017/01/09/16/37/bed-1966960_960_720.png");
+      background-image: url("/src/images/bed1.png");
       background-size: 268px;
       background-position: 234px -40px;
     }
