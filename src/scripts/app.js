@@ -51,7 +51,7 @@
     }
   }
 
-  var btnFavorite = document.querySelectorAll("a.btn-outline");
+  var btnFavorite = document.querySelectorAll(".btn-outline");
 
   for (var i = 0; i < btnFavorite.length; i++) {
     btnFavorite[i].addEventListener(
