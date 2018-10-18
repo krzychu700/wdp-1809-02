@@ -109,7 +109,7 @@
         @extend .fa-star;
         
         text-decoration: none;
-        color: rgb(42,42,42);
+        color: rgb(42, 42, 42);
 
         &.star-hover {
           color: $primary;
@@ -164,14 +164,14 @@
     }
   }
 
-  .promoted-baner {
-    background-color: $promoted-baner-bg;
+  .promoted-banner {
+    background-color: $promoted-banner-bg;
     padding: 0;
     display: flex;
     align-items: center;
   }
 
-  .promoted-baner-title {
+  .promoted-banner-title {
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 100%;
@@ -203,15 +203,15 @@
     }
   }
 
-  .promoted-baner-slider {
+  .promoted-banner-slider {
     position: absolute;
     width: 100%;
     bottom: 0;
     right: 15px;
     background-color: $footer-claim-bg;
 
-    .promoted-baner-slider-left,
-    .promoted-baner-slider-right {
+    .promoted-banner-slider-left,
+    .promoted-banner-slider-right {
       padding: 13px 0;
       text-align: center;
       transition-duration: 0.5s;
@@ -236,12 +236,12 @@
   }
 
   .arrow-left {
-    transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
   }
 
   .arrow-right {
-    transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
 }
