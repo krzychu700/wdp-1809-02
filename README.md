@@ -2,8 +2,15 @@
 
 ## Opis projektu
 
-## Demo
+  Ten projekt to przykładowa strona sklepu, która posłużyła do nauki kodowania dla trzech programistów.
+  Chodziło zarówno o ćwiczenia z zakresu pisania kodu `HTML`, `CSS` i `Javascript` ale także (a może przede wszystkim)
+  do opanowania **wspólpracy grupowej** w ramach projektu, a także nabrania **dobrych nawyków**, tak aby kod był elegancki
+  i tak - jak to podkreślali mentorzy - _aby wyglądal jakby pisał go **jeden programista**_.
 
+## Demo
+  
+  Aktualny stan projektu można obejrzeć tutaj:   [**PODGLĄD STRONY PROJEKTU**](https://dreamy-goldwater.netlify.com/)
+  
 ## Inicjacja projektu
 
 Głównym założeniem projektu jest praca na **Forkach** - podstawowy szkielet strony wraz ze stylami został umieszczony na **Githubie** jako tzn **master**, z którego pozostali programiści stowrzyli swoją kopie. Zmiany do **mastera** są akceptowane przez zespół **mentorów** lub **PM - project managera**, uprzednio dokonawszy **code review** - umożliwia to kontrolę nad spójnością kodu i tym, co trafia do **mastera**.
@@ -17,3 +24,5 @@ Ostatnim elementem były cotygodniowe spotkania zespołu, umożliwiające przedy
 ## NPM Tasks
 
 ## Konwencje i dobre praktyki
+
+TODO: proszę również o info o podglądach PR'ek ;)
