@@ -49,6 +49,7 @@
         background-color: #ffffff;
         border: 1px solid #e1e1e1;
         margin: 0 auto 2rem;
+        animation: fadein 2s;
 
         &:hover {
           .btn-main-small {
@@ -128,9 +129,7 @@
             .star {
               text-decoration: none;
               color: rgb(42, 42, 42);
-
               @extend .far;
-
               @extend .fa-star;
 
               &.star-hover {
@@ -182,7 +181,7 @@
             margin: 0;
             padding: 0;
 
-            a.active {
+            span.active {
               i {
                 color: $primary;
               }
@@ -220,5 +219,26 @@
         }
       }
     }
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.new-furniture-panel {
+  .furniture-tab {
+    cursor: pointer;
+  }
+
+  .active {
+    width: 100%;
+    border-bottom: 4px solid #d58e32;
   }
 }
