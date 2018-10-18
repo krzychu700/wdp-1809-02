@@ -49,6 +49,7 @@
         background-color: #ffffff;
         border: 1px solid #e1e1e1;
         margin: 0 auto 2rem;
+        animation: fadein 2s;
 
         &:hover {
           .btn-main-small {
@@ -219,18 +220,6 @@
       }
     }
 
-    .chair-products,
-    .sofa-products,
-    .table-products,
-    .dining-products {
-      display: none;
-      animation: fadein 2s;
-    }
-
-    .bed-products {
-      animation: fadein 2s;
-    }
-
     @keyframes fadein {
       from {
         opacity: 0;
@@ -240,5 +229,16 @@
         opacity: 1;
       }
     }
+  }
+}
+
+.new-furniture-panel {
+  .furniture-tab {
+    cursor: pointer;
+  }
+
+  .active {
+    width: 100%;
+    border-bottom: 4px solid #d58e32;
   }
 }
