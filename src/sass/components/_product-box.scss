@@ -128,9 +128,7 @@
             .star {
               text-decoration: none;
               color: rgb(42, 42, 42);
-
               @extend .far;
-
               @extend .fa-star;
 
               &.star-hover {
@@ -182,7 +180,7 @@
             margin: 0;
             padding: 0;
 
-            a.active {
+            span.active {
               i {
                 color: $primary;
               }
@@ -218,6 +216,28 @@
             }
           }
         }
+      }
+    }
+
+    .chair-products,
+    .sofa-products,
+    .table-products,
+    .dining-products {
+      display: none;
+      animation: fadein 2s;
+    }
+
+    .bed-products {
+      animation: fadein 2s;
+    }
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
       }
     }
   }
