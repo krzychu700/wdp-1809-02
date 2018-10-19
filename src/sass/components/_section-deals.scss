@@ -144,3 +144,15 @@
     background-size: cover;
   }
 }
+
+@media (max-width: 768px) {
+  .section--deals {
+    .row {
+      div {
+        &:first-of-type {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
