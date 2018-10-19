@@ -50,18 +50,17 @@ function topRatedChecker() {
 
 function SaleOff() {
   for (var i = 0; i < productBoxfinder.length; i++) {
-    var getPriceOld = productBoxfinder[i].querySelectorAll('.price-old');
-    for (var j = 0; j < getPriceOld.length; j++) {
-
-      if ((getPriceOld[j] === null) || (getPriceOld[j] === null)) {
-        continue;
-      } else {
-        slideCreator();
-        sliderIfnoHolder(i);
-      }
+    var getPriceOld = productBoxfinder[i].querySelector('.price-old');
+    // for (var j = 0; j < getPriceOld.length; j++) {
+    if ((getPriceOld === null) || (getPriceOld === undefined)) {
+      continue;
+    } else {
+      slideCreator();
+      sliderIfnoHolder(i);
     }
   }
 }
+// }
 
 function topFeatures() {
   var priceNew = 0;
