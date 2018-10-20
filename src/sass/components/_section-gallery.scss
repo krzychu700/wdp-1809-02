@@ -183,12 +183,17 @@
                 }
 
                 .stars {
-                  a {
+                  span {
                     text-decoration: none;
                     color: rgb(42, 42, 42);
                     @extend .far;
                     @extend .fa-star;
 
+                    &.star-hover {
+                      color: $primary;
+                      font-weight: 900;
+                    }
+                    
                     &.full {
                       @extend .fas;
                     }
@@ -325,7 +330,7 @@
           }
 
           .text-price-right {
-            color: #79ae30;
+            color: $bg-color-gallery4;
             font-size: 40px;
             letter-spacing: 1px;
             margin: 0;
@@ -337,7 +342,7 @@
           color: $gallery-color;
           font-size: 40px;
           letter-spacing: 1px;
-          margin: 0 0 20px 0;
+          margin: 0 0 20px;
           font-weight: bold;
         }
 
