@@ -94,7 +94,7 @@
           starsCounter = starsHolder[l].querySelectorAll(".full").length;
           starAverage = starsCounter;
         }
-        if (((priceOld / priceNew) > 1.3) && (starAverage > 3)) {
+        if (((priceOld / priceNew) > 1.1) && (starAverage > 1)) {
           slideCreator();
           sliderIfnoHolder(i);
         } else if ((productBoxfinder[i].lastElementChild.lastElementChild.children[0].classList.contains("price-old")) === false) {
