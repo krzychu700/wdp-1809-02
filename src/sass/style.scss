@@ -1,6 +1,6 @@
 @import "variables";
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 @import "bootstrap/bootstrap.scss";
 @import "fontawesome/fontawesome";
@@ -9,17 +9,24 @@
 @import "fontawesome/regular";
 
 @import "components/header";
+@import "components/product-box";
+@import "components/section--features";
+@import "components/feature-box";
+@import "components/post-box";
+@import "components/panel-bar";
 @import "components/footer";
 @import "components/button";
-@import "components/feature-box";
-@import "components/panel-bar";
-@import "components/post-box";
 @import "components/product-box";
+@import "components/section-deals";
 @import "components/animations";
 @import "components/section-gallery";
 
 @import "components/brands";
+@import "components/feedback";
 @import "components/section--features";
+@import "components/promoted";
+
+@import "media";
 
 body {
   font-family: 'Poppins', sans-serif;
