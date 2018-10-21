@@ -48,6 +48,7 @@
         background-color: #ffffff;
         border: 1px solid #e1e1e1;
         margin: 0 auto 2rem;
+        animation: fadein 2s;
 
         &:hover {
           .btn-main-small {
@@ -228,5 +229,15 @@
   &.active {
     width: 100%;
     border-bottom: 4px solid #d58e32;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
