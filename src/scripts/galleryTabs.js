@@ -22,7 +22,9 @@
     var getProductImage = productBoxfinder[k].querySelector(".myImage").src;
     var getProductName = productBoxfinder[k].querySelector(".content").innerText;
     var getNewPrice = productBoxfinder[k].querySelector(".price-new").innerText;
-    if (productBoxfinder[k].lastElementChild.lastElementChild.children[0].classList.contains("price-old")) {
+    var box = productBoxfinder[k];
+    var sale = box.querySelector('.price-old');
+    if (sale) {
       getOldPrice = productBoxfinder[k].querySelector(".price-old").innerText;
     } else {
       getOldPrice = getNewPrice
@@ -55,17 +57,6 @@
     }
   }
 
-  // function SaleOff() {
-  //   for (var i = 0; i < productBoxfinder.length; i++) {
-  //     if (productBoxfinder[i].lastElementChild.lastElementChild.children[0].classList.contains("price-old")) {
-  //       slideCreator();
-  //       sliderIfnoHolder(i);
-  //     } else if ((productBoxfinder[i].lastElementChild.lastElementChild.children[0].classList.contains("price-old")) === false) {
-  //       i++;
-  //     }
-  //   }
-  // }
-
   function SaleOff() {
     for (var i = 0; i < productBoxfinder.length; i++) {
       var box = productBoxfinder[i];
@@ -87,7 +78,9 @@
     var getTextN;
     var getTextO;
     for (var i = 0; i < productBoxfinder.length; i++) {
-      if (productBoxfinder[i].lastElementChild.lastElementChild.children[0].classList.contains("price-old")) {
+      var box = productBoxfinder[i];
+      var sale = box.querySelector('.price-old');
+      if (sale) {
         getPriceNew = productBoxfinder[i].querySelectorAll('.price-new');
         getPriceOld = productBoxfinder[i].querySelectorAll('.price-old');
         starsHolder = productBoxfinder[i].querySelectorAll(".stars");
@@ -108,8 +101,6 @@
         if (((priceOld / priceNew) > 1.1) && (starAverage > 1)) {
           slideCreator();
           sliderIfnoHolder(i);
-        } else if ((productBoxfinder[i].lastElementChild.lastElementChild.children[0].classList.contains("price-old")) === false) {
-          i++;
         }
       }
     }
@@ -260,23 +251,23 @@
     if (pos < 0) {
       slidersLeft = sliders.length % pos;
       pos = sliders.length - slidersLeft;
+      tempPos = sliders.length;
     }
+    if (pos === tempPos) {
+      sliderCleaner();
+      tabChecker();
+      sliderLength();
+      pos = sliders.length - 6;
+    }
+    tempPos = pos + 6;
     for (var i = 0; i < sliders.length; i++) {
       sliders[i].style.display = "none";
-      tempPos = pos + 6;
     }
     for (var j = pos; j < tempPos; j++) {
       if (tempPos > sliders.length) {
         tempPos = sliders.length
       }
       sliders[j].style.display = "flex";
-    }
-    if (pos === 0) {
-      sliderCleaner();
-      tabChecker();
-      sliderLength();
-      pos = 0;
-      tempPos = 0;
     }
   }
 
