@@ -55,13 +55,24 @@
     }
   }
 
+  // function SaleOff() {
+  //   for (var i = 0; i < productBoxfinder.length; i++) {
+  //     if (productBoxfinder[i].lastElementChild.lastElementChild.children[0].classList.contains("price-old")) {
+  //       slideCreator();
+  //       sliderIfnoHolder(i);
+  //     } else if ((productBoxfinder[i].lastElementChild.lastElementChild.children[0].classList.contains("price-old")) === false) {
+  //       i++;
+  //     }
+  //   }
+  // }
+
   function SaleOff() {
     for (var i = 0; i < productBoxfinder.length; i++) {
-      if (productBoxfinder[i].lastElementChild.lastElementChild.children[0].classList.contains("price-old")) {
+      var box = productBoxfinder[i];
+      var sale = box.querySelector('.price-old');
+      if (sale) {
         slideCreator();
         sliderIfnoHolder(i);
-      } else if ((productBoxfinder[i].lastElementChild.lastElementChild.children[0].classList.contains("price-old")) === false) {
-        i++;
       }
     }
   }
